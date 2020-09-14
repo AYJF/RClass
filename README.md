@@ -7,3 +7,8 @@ to use multiple processes to speed up data reading. For instance, we can set asi
 read the data (via num_workers). Because this feature is not currently supported on Windows the
 following code checks the platform to make sure that we do not saddle our Windows-using friends
 with error messages later on.
+
+Just as we implemented linear regression from scratch, we believe that multiclass logistic (soft-
+max) regression is similarly fundamental and you ought to know the gory details of how to imple-
+ment it yourself. As with linear regression, after doing things by hand we will breeze through an
+implementation in Gluon for comparison. To begin, let us import the familiar packages.
